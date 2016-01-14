@@ -1,0 +1,19 @@
+Configuring persistent-sqlite-2.2...
+Building persistent-sqlite-2.2...
+Preprocessing library persistent-sqlite-2.2...
+[1 of 2] Compiling Database.Sqlite  ( Database/Sqlite.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.4.0/build/Database/Sqlite.o )
+
+Database/Sqlite.hs:50:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[2 of 2] Compiling Database.Persist.Sqlite ( Database/Persist/Sqlite.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.4.0/build/Database/Persist/Sqlite.o )
+
+Database/Persist/Sqlite.hs:39:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+In-place registering persistent-sqlite-2.2...
+Installing library in
+/Users/hoffmeyer/.stack/snapshots/x86_64-osx/lts-4.1/7.10.2/lib/x86_64-osx-ghc-7.10.2/persistent-sqlite-2.2-2sN8Gs50SUcHld54m6DzPd
+Registering persistent-sqlite-2.2...

@@ -1,0 +1,889 @@
+
+==================== FINAL INTERFACE ====================
+2016-01-14 20:09:39.116483 UTC
+
+interface ranki_LPol1x9rbEU4LoToW2Zhhz:Rankit 7102
+  interface hash: 065d181c37bdd9685030a285f0a9022e
+  ABI hash: 6f3bb36217309f53979526afcd5e9f9b
+  export-list hash: 81cbfc4e53cf4e175e626ef69d5a812f
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 56b9a755d22be00f2eba50f3628a69c7
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Rankit.rankit
+module dependencies:
+package dependencies: base-4.8.1.0* ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0
+orphans: base-4.8.1.0:GHC.Base base-4.8.1.0:GHC.Float
+family instance modules: base-4.8.1.0:Control.Applicative
+                         base-4.8.1.0:Data.Either base-4.8.1.0:Data.Monoid
+                         base-4.8.1.0:Data.Type.Equality base-4.8.1.0:GHC.Generics
+import  -/  base-4.8.1.0:Data.Foldable 2e5acb797cfda6b3b7fabd7052abe290
+import  -/  base-4.8.1.0:Data.Function 6b13a8d3a5e3bd757a91434dce3fc7f3
+import  -/  base-4.8.1.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.1.0:GHC.Show b8c65ca3124f92a166c9f05120382442
+import  -/  base-4.8.1.0:Prelude 518f762991bc287d78f21a73c974da1f
+import  -/  base-4.8.1.0:System.IO 29a6f3d7c8ad8a4e6200d8bbb6e70aae
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+eba48ed18ecfbce1b25f7a4280ea75d2
+  $c== :: Rankit.EventData -> Rankit.EventData -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U(U),A)><S(SL),1*U(1*U(U),A)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ x :: Rankit.EventData y :: Rankit.EventData ->
+                 case x of wild { Rankit.EventData ds ds1 ->
+                 case ds of wild1 { GHC.Types.I# x1 ->
+                 case y of wild2 { Rankit.EventData ds2 ds3 ->
+                 case ds2 of wild3 { GHC.Types.I# y1 ->
+                 GHC.Prim.tagToEnum#
+                   @ GHC.Types.Bool
+                   (GHC.Prim.==# x1 y1) } } } }) -}
+eba48ed18ecfbce1b25f7a4280ea75d2
+  $fEqEventData :: GHC.Classes.Eq Rankit.EventData
+  DFunId[0]
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Rankit.EventData Rankit.$c== Rankit.$fEqEventData_$c/= -}
+eba48ed18ecfbce1b25f7a4280ea75d2
+  $fEqEventData_$c/= ::
+    Rankit.EventData -> Rankit.EventData -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ x :: Rankit.EventData y :: Rankit.EventData ->
+                 GHC.Classes.not (Rankit.$c== x y)) -}
+4a540c1a01e742ae478a3174e1f69399
+  $fEqPlayer :: GHC.Classes.Eq Rankit.Player
+  DFunId[0]
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Rankit.Player Rankit.$fEqPlayer_$c== Rankit.$fEqPlayer_$c/= -}
+4a540c1a01e742ae478a3174e1f69399
+  $fEqPlayer_$c/= :: Rankit.Player -> Rankit.Player -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLL),1*U(1*U(U),1*U,1*U(U))><S(SLL),1*U(1*U(U),1*U,1*U(U))>,
+     Unfolding: InlineRule (2, True, False)
+                (\ a :: Rankit.Player b :: Rankit.Player ->
+                 case Rankit.$fEqPlayer_$c== a b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+4a540c1a01e742ae478a3174e1f69399
+  $fEqPlayer_$c== :: Rankit.Player -> Rankit.Player -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLL),1*U(1*U(U),1*U,1*U(U))><S(SLL),1*U(1*U(U),1*U,1*U(U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: Rankit.Player w1 :: Rankit.Player ->
+                 case w of ww { Rankit.Player ww1 ww2 ww3 ->
+                 case ww1 of ww4 { GHC.Types.I# ww5 ->
+                 case w1 of ww6 { Rankit.Player ww7 ww8 ww9 ->
+                 case ww7 of ww10 { GHC.Types.I# ww11 ->
+                 Rankit.$w$c== ww5 ww2 ww3 ww11 ww8 ww9 } } } }) -}
+4a540c1a01e742ae478a3174e1f69399
+  $fOrdPlayer :: GHC.Classes.Ord Rankit.Player
+  DFunId[0]
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Rankit.Player
+                  Rankit.$fEqPlayer
+                  Rankit.$fOrdPlayer_$ccompare
+                  Rankit.$fOrdPlayer_$c<
+                  Rankit.$fOrdPlayer_$c<=
+                  Rankit.$fOrdPlayer_$c>
+                  Rankit.$fOrdPlayer_$c>=
+                  Rankit.$fOrdPlayer_$cmax
+                  Rankit.$fOrdPlayer_$cmin -}
+4a540c1a01e742ae478a3174e1f69399
+  $fOrdPlayer_$c< :: Rankit.Player -> Rankit.Player -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLL),1*U(1*U(U),1*U,1*U(U))><S(SLL),1*U(1*U(U),1*U,1*U(U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: Rankit.Player w1 :: Rankit.Player ->
+                 case w of ww { Rankit.Player ww1 ww2 ww3 ->
+                 case ww1 of ww4 { GHC.Types.I# ww5 ->
+                 case w1 of ww6 { Rankit.Player ww7 ww8 ww9 ->
+                 case ww7 of ww10 { GHC.Types.I# ww11 ->
+                 Rankit.$w$c< ww5 ww2 ww3 ww11 ww8 ww9 } } } }) -}
+4a540c1a01e742ae478a3174e1f69399
+  $fOrdPlayer_$c<= ::
+    Rankit.Player -> Rankit.Player -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLL),1*U(1*U(U),1*U,1*U(U))><S(SLL),1*U(1*U(U),1*U,1*U(U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: Rankit.Player w1 :: Rankit.Player ->
+                 case w of ww { Rankit.Player ww1 ww2 ww3 ->
+                 case ww1 of ww4 { GHC.Types.I# ww5 ->
+                 case w1 of ww6 { Rankit.Player ww7 ww8 ww9 ->
+                 case ww7 of ww10 { GHC.Types.I# ww11 ->
+                 Rankit.$w$c<= ww5 ww2 ww3 ww11 ww8 ww9 } } } }) -}
+4a540c1a01e742ae478a3174e1f69399
+  $fOrdPlayer_$c> :: Rankit.Player -> Rankit.Player -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLL),1*U(1*U(U),1*U,1*U(U))><S(SLL),1*U(1*U(U),1*U,1*U(U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: Rankit.Player w1 :: Rankit.Player ->
+                 case w of ww { Rankit.Player ww1 ww2 ww3 ->
+                 case ww1 of ww4 { GHC.Types.I# ww5 ->
+                 case w1 of ww6 { Rankit.Player ww7 ww8 ww9 ->
+                 case ww7 of ww10 { GHC.Types.I# ww11 ->
+                 Rankit.$w$c> ww5 ww2 ww3 ww11 ww8 ww9 } } } }) -}
+4a540c1a01e742ae478a3174e1f69399
+  $fOrdPlayer_$c>= ::
+    Rankit.Player -> Rankit.Player -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLL),1*U(1*U(U),1*U,1*U(U))><S(SLL),1*U(1*U(U),1*U,1*U(U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: Rankit.Player w1 :: Rankit.Player ->
+                 case w of ww { Rankit.Player ww1 ww2 ww3 ->
+                 case ww1 of ww4 { GHC.Types.I# ww5 ->
+                 case w1 of ww6 { Rankit.Player ww7 ww8 ww9 ->
+                 case ww7 of ww10 { GHC.Types.I# ww11 ->
+                 Rankit.$w$c>= ww5 ww2 ww3 ww11 ww8 ww9 } } } }) -}
+4a540c1a01e742ae478a3174e1f69399
+  $fOrdPlayer_$ccompare ::
+    Rankit.Player -> Rankit.Player -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLL),1*U(1*U(U),1*U,1*U(U))><S(SLL),1*U(1*U(U),1*U,1*U(U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: Rankit.Player w1 :: Rankit.Player ->
+                 case w of ww { Rankit.Player ww1 ww2 ww3 ->
+                 case ww1 of ww4 { GHC.Types.I# ww5 ->
+                 case w1 of ww6 { Rankit.Player ww7 ww8 ww9 ->
+                 case ww7 of ww10 { GHC.Types.I# ww11 ->
+                 Rankit.$w$ccompare ww5 ww2 ww3 ww11 ww8 ww9 } } } }) -}
+4a540c1a01e742ae478a3174e1f69399
+  $fOrdPlayer_$cmax ::
+    Rankit.Player -> Rankit.Player -> Rankit.Player
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLL),U(U(U),U,U(U))><S(SLL),U(U(U),U,U(U))>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ x :: Rankit.Player y :: Rankit.Player ->
+                 case Rankit.$fOrdPlayer_$c<= x y of wild {
+                   GHC.Types.False -> x GHC.Types.True -> y }) -}
+4a540c1a01e742ae478a3174e1f69399
+  $fOrdPlayer_$cmin ::
+    Rankit.Player -> Rankit.Player -> Rankit.Player
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLL),U(U(U),U,U(U))><S(SLL),U(U(U),U,U(U))>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ x :: Rankit.Player y :: Rankit.Player ->
+                 case Rankit.$fOrdPlayer_$c<= x y of wild {
+                   GHC.Types.False -> y GHC.Types.True -> x }) -}
+eba48ed18ecfbce1b25f7a4280ea75d2
+  $fShowEventData :: GHC.Show.Show Rankit.EventData
+  DFunId[0]
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Rankit.EventData
+                  Rankit.$fShowEventData_$cshowsPrec
+                  Rankit.$fShowEventData_$cshow
+                  Rankit.$fShowEventData_$cshowList -}
+eba48ed18ecfbce1b25f7a4280ea75d2
+  $fShowEventData1 ::
+    Rankit.EventData -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2, HasNoCafRefs,
+     Unfolding: (\ x :: Rankit.EventData
+                   s :: GHC.Base.String[OneShot] ->
+                 case x of wild { Rankit.EventData ds ds1 ->
+                 case ds of ww2 { GHC.Types.I# ww3 ->
+                 case GHC.Show.$wshowSignedInt
+                        0
+                        ww3
+                        (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   (GHC.Types.: @ GHC.Types.Char ww5 ww6)
+                   s } } }) -}
+eba48ed18ecfbce1b25f7a4280ea75d2
+  $fShowEventData_$cshow :: Rankit.EventData -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U(U),A)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ x :: Rankit.EventData ->
+                 case x of wild { Rankit.EventData ds ds1 ->
+                 case ds of ww2 { GHC.Types.I# ww3 ->
+                 case GHC.Show.$wshowSignedInt
+                        0
+                        ww3
+                        (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                 GHC.Types.: @ GHC.Types.Char ww5 ww6 } } }) -}
+eba48ed18ecfbce1b25f7a4280ea75d2
+  $fShowEventData_$cshowList :: [Rankit.EventData] -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ ls :: [Rankit.EventData] s :: GHC.Base.String ->
+                 GHC.Show.showList__
+                   @ Rankit.EventData
+                   Rankit.$fShowEventData1
+                   ls
+                   s) -}
+eba48ed18ecfbce1b25f7a4280ea75d2
+  $fShowEventData_$cshowsPrec ::
+    GHC.Types.Int -> Rankit.EventData -> GHC.Show.ShowS
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,A><S(SL),1*U(1*U(U),A)><L,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ w :: GHC.Types.Int
+                   w1 :: Rankit.EventData
+                   w2 :: GHC.Base.String ->
+                 case w1 of ww { Rankit.EventData ww1 ww2 ->
+                 case ww1 of ww3 { GHC.Types.I# ww4 ->
+                 Rankit.$w$cshowsPrec ww4 w2 } }) -}
+ca517412c6b7955349d61e2d2cbf3c0b
+  $fShowMatch :: GHC.Show.Show Rankit.Match
+  DFunId[0]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Rankit.Match
+                  Rankit.$fShowMatch_$cshowsPrec
+                  Rankit.$fShowMatch_$cshow
+                  Rankit.$fShowMatch_$cshowList -}
+ca517412c6b7955349d61e2d2cbf3c0b
+  $fShowMatch1 :: Rankit.Match -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ w :: Rankit.Match w1 :: GHC.Base.String ->
+                 case w of ww { Rankit.Match ww1 ww2 ww3 ww4 ->
+                 Rankit.$w$cshowsPrec1 0 ww1 ww2 ww3 ww4 w1 }) -}
+ca517412c6b7955349d61e2d2cbf3c0b
+  $fShowMatch_$cshow :: Rankit.Match -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U(U),1*U,1*U(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ x :: Rankit.Match ->
+                 Rankit.$fShowMatch_$cshowsPrec
+                   GHC.Show.shows18
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+ca517412c6b7955349d61e2d2cbf3c0b
+  $fShowMatch_$cshowList :: [Rankit.Match] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Rankit.Match
+                   Rankit.$fShowMatch1) -}
+ca517412c6b7955349d61e2d2cbf3c0b
+  $fShowMatch_$cshowsPrec ::
+    GHC.Types.Int -> Rankit.Match -> GHC.Show.ShowS
+  {- Arity: 3,
+     Strictness: <S,1*U(U)><S,1*U(1*U,1*U(U),1*U,1*U(U))><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ w :: GHC.Types.Int w1 :: Rankit.Match w2 :: GHC.Base.String ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Rankit.Match ww3 ww4 ww5 ww6 ->
+                 Rankit.$w$cshowsPrec1 ww1 ww3 ww4 ww5 ww6 w2 } }) -}
+4a540c1a01e742ae478a3174e1f69399
+  $fShowPlayer :: GHC.Show.Show Rankit.Player
+  DFunId[0]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Rankit.Player
+                  Rankit.$fShowPlayer_$cshowsPrec
+                  Rankit.$fShowPlayer_$cshow
+                  Rankit.$fShowPlayer_$cshowList -}
+4a540c1a01e742ae478a3174e1f69399
+  $fShowPlayer1 :: Rankit.Player -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ w :: Rankit.Player w1 :: GHC.Base.String ->
+                 case w of ww { Rankit.Player ww1 ww2 ww3 ->
+                 Rankit.$w$cshowsPrec2 0 ww1 ww2 ww3 w1 }) -}
+5c16d39ca1f7eebc3614bbeb55c6d271
+  $fShowPlayer2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Player {"#) -}
+6085623203c9f7b2df5f0c83f13d1e4a
+  $fShowPlayer3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "}"#) -}
+9f9992f083f87b863f2c7b37dc6c8291
+  $fShowPlayer4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "points = "#) -}
+61213eddfdd22f2e7c22ead36f8dde25
+  $fShowPlayer5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "playerName = "#) -}
+b4eb4a1c9d598fe1be46d7fd9af51d69
+  $fShowPlayer6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ", "#) -}
+979a17b4fe544da6258dbc4a256540aa
+  $fShowPlayer7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "pid = "#) -}
+4a540c1a01e742ae478a3174e1f69399
+  $fShowPlayer_$cshow :: Rankit.Player -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U(U),1*U,1*U(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ x :: Rankit.Player ->
+                 Rankit.$fShowPlayer_$cshowsPrec
+                   GHC.Show.shows18
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+4a540c1a01e742ae478a3174e1f69399
+  $fShowPlayer_$cshowList :: [Rankit.Player] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Rankit.Player
+                   Rankit.$fShowPlayer1) -}
+4a540c1a01e742ae478a3174e1f69399
+  $fShowPlayer_$cshowsPrec ::
+    GHC.Types.Int -> Rankit.Player -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S,1*U(U)><S,1*U(1*U(U),1*U,1*U(U))><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ w :: GHC.Types.Int w1 :: Rankit.Player w2 :: GHC.Base.String ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Rankit.Player ww3 ww4 ww5 ->
+                 Rankit.$w$cshowsPrec2 ww1 ww3 ww4 ww5 w2 } }) -}
+7dda342f71c1c6f31f1c5a733fe510e2
+  $w$c< ::
+    GHC.Prim.Int#
+    -> GHC.Base.String
+    -> GHC.Types.Int
+    -> GHC.Prim.Int#
+    -> GHC.Base.String
+    -> GHC.Types.Int
+    -> GHC.Types.Bool
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <L,U><L,1*U><L,1*U(U)><L,U><L,1*U><L,1*U(U)>,
+     Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Int#
+                   ww1 :: GHC.Base.String
+                   ww2 :: GHC.Types.Int
+                   ww3 :: GHC.Prim.Int#
+                   ww4 :: GHC.Base.String
+                   ww5 :: GHC.Types.Int ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<# ww ww3) of wild {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.==# ww ww3) of wild1 {
+                        GHC.Types.False -> GHC.Types.False
+                        GHC.Types.True
+                        -> case GHC.Classes.$fOrd[]_$s$ccompare1 ww1 ww4 of wild2 {
+                             GHC.Types.LT -> GHC.Types.True
+                             GHC.Types.EQ -> GHC.Classes.ltInt ww2 ww5
+                             GHC.Types.GT -> GHC.Types.False } }
+                   GHC.Types.True -> GHC.Types.True }) -}
+51e410b40a619b427659aacc8f8b76a9
+  $w$c<= ::
+    GHC.Prim.Int#
+    -> GHC.Base.String
+    -> GHC.Types.Int
+    -> GHC.Prim.Int#
+    -> GHC.Base.String
+    -> GHC.Types.Int
+    -> GHC.Types.Bool
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <L,U><L,1*U><L,1*U(U)><L,U><L,1*U><L,1*U(U)>,
+     Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Int#
+                   ww1 :: GHC.Base.String
+                   ww2 :: GHC.Types.Int
+                   ww3 :: GHC.Prim.Int#
+                   ww4 :: GHC.Base.String
+                   ww5 :: GHC.Types.Int ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<# ww ww3) of wild {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.==# ww ww3) of wild1 {
+                        GHC.Types.False -> GHC.Types.False
+                        GHC.Types.True
+                        -> case GHC.Classes.$fOrd[]_$s$ccompare1 ww1 ww4 of wild2 {
+                             GHC.Types.LT -> GHC.Types.True
+                             GHC.Types.EQ -> GHC.Classes.leInt ww2 ww5
+                             GHC.Types.GT -> GHC.Types.False } }
+                   GHC.Types.True -> GHC.Types.True }) -}
+6a539f41a39fa5ff1bfd1d0dac5630e9
+  $w$c== ::
+    GHC.Prim.Int#
+    -> GHC.Base.String
+    -> GHC.Types.Int
+    -> GHC.Prim.Int#
+    -> GHC.Base.String
+    -> GHC.Types.Int
+    -> GHC.Types.Bool
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <L,U><L,1*U><L,1*U(U)><L,U><L,1*U><L,1*U(U)>,
+     Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Int#
+                   ww1 :: GHC.Base.String
+                   ww2 :: GHC.Types.Int
+                   ww3 :: GHC.Prim.Int#
+                   ww4 :: GHC.Base.String
+                   ww5 :: GHC.Types.Int ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==# ww ww3) of wild {
+                   GHC.Types.False -> GHC.Types.False
+                   GHC.Types.True
+                   -> case GHC.Base.eqString ww1 ww4 of wild1 {
+                        GHC.Types.False -> GHC.Types.False
+                        GHC.Types.True -> GHC.Classes.eqInt ww2 ww5 } }) -}
+af5cfd2e1c12aa6bbd1e52a19715dda5
+  $w$c> ::
+    GHC.Prim.Int#
+    -> GHC.Base.String
+    -> GHC.Types.Int
+    -> GHC.Prim.Int#
+    -> GHC.Base.String
+    -> GHC.Types.Int
+    -> GHC.Types.Bool
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <L,U><L,1*U><L,1*U(U)><L,U><L,1*U><L,1*U(U)>,
+     Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Int#
+                   ww1 :: GHC.Base.String
+                   ww2 :: GHC.Types.Int
+                   ww3 :: GHC.Prim.Int#
+                   ww4 :: GHC.Base.String
+                   ww5 :: GHC.Types.Int ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<# ww ww3) of wild {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.==# ww ww3) of wild1 {
+                        GHC.Types.False -> GHC.Types.True
+                        GHC.Types.True
+                        -> case GHC.Classes.$fOrd[]_$s$ccompare1 ww1 ww4 of wild2 {
+                             GHC.Types.LT -> GHC.Types.False
+                             GHC.Types.EQ -> GHC.Classes.gtInt ww2 ww5
+                             GHC.Types.GT -> GHC.Types.True } }
+                   GHC.Types.True -> GHC.Types.False }) -}
+b740845cae0ec5b96a35a7146a1fd196
+  $w$c>= ::
+    GHC.Prim.Int#
+    -> GHC.Base.String
+    -> GHC.Types.Int
+    -> GHC.Prim.Int#
+    -> GHC.Base.String
+    -> GHC.Types.Int
+    -> GHC.Types.Bool
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <L,U><L,1*U><L,1*U(U)><L,U><L,1*U><L,1*U(U)>,
+     Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Int#
+                   ww1 :: GHC.Base.String
+                   ww2 :: GHC.Types.Int
+                   ww3 :: GHC.Prim.Int#
+                   ww4 :: GHC.Base.String
+                   ww5 :: GHC.Types.Int ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<# ww ww3) of wild {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.==# ww ww3) of wild1 {
+                        GHC.Types.False -> GHC.Types.True
+                        GHC.Types.True
+                        -> case GHC.Classes.$fOrd[]_$s$ccompare1 ww1 ww4 of wild2 {
+                             GHC.Types.LT -> GHC.Types.False
+                             GHC.Types.EQ -> GHC.Classes.geInt ww2 ww5
+                             GHC.Types.GT -> GHC.Types.True } }
+                   GHC.Types.True -> GHC.Types.False }) -}
+79be93d1d611f363bde3b55f3d774123
+  $w$ccompare ::
+    GHC.Prim.Int#
+    -> GHC.Base.String
+    -> GHC.Types.Int
+    -> GHC.Prim.Int#
+    -> GHC.Base.String
+    -> GHC.Types.Int
+    -> GHC.Types.Ordering
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <L,U><L,1*U><L,1*U(U)><L,U><L,1*U><L,1*U(U)>,
+     Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Int#
+                   ww1 :: GHC.Base.String
+                   ww2 :: GHC.Types.Int
+                   ww3 :: GHC.Prim.Int#
+                   ww4 :: GHC.Base.String
+                   ww5 :: GHC.Types.Int ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<# ww ww3) of wild {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.==# ww ww3) of wild1 {
+                        GHC.Types.False -> GHC.Types.GT
+                        GHC.Types.True
+                        -> case GHC.Classes.$fOrd[]_$s$ccompare1 ww1 ww4 of wild2 {
+                             GHC.Types.LT -> GHC.Types.LT
+                             GHC.Types.EQ -> GHC.Classes.compareInt ww2 ww5
+                             GHC.Types.GT -> GHC.Types.GT } }
+                   GHC.Types.True -> GHC.Types.LT }) -}
+38a2cc9534325923f306e56d20405243
+  $w$cshowsPrec ::
+    GHC.Prim.Int# -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,1*U>, Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Int# w :: GHC.Base.String ->
+                 case GHC.Show.$wshowSignedInt
+                        0
+                        ww
+                        (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   (GHC.Types.: @ GHC.Types.Char ww5 ww6)
+                   w }) -}
+9e87a82da4911d89c4ea5ff703820912
+  $w$cshowsPrec1 ::
+    GHC.Prim.Int#
+    -> [GHC.Types.Int]
+    -> GHC.Types.Int
+    -> [GHC.Types.Int]
+    -> GHC.Types.Int
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 6,
+     Strictness: <L,U><L,1*U><L,1*U(U)><L,1*U><L,1*U(U)><L,U>,
+     Inline: [0] -}
+3e9ff34eb0417c4616a6424e1c33fb5e
+  $w$cshowsPrec2 ::
+    GHC.Prim.Int#
+    -> GHC.Types.Int
+    -> GHC.Base.String
+    -> GHC.Types.Int
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 5, Strictness: <L,U><L,1*U(U)><L,1*U><L,1*U(U)><L,U>,
+     Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Int#
+                   ww1 :: GHC.Types.Int
+                   ww2 :: GHC.Base.String
+                   ww3 :: GHC.Types.Int
+                   w :: GHC.Base.String ->
+                 let {
+                   g :: GHC.Base.String -> GHC.Base.String
+                     {- Arity: 1, Strictness: <L,1*U> -}
+                   = \ x :: GHC.Base.String[OneShot] ->
+                     GHC.Base.++
+                       @ GHC.Types.Char
+                       Rankit.$fShowPlayer7
+                       (case ww1 of ww4 { GHC.Types.I# ww5 ->
+                        case GHC.Show.$wshowSignedInt
+                               0
+                               ww5
+                               (GHC.Base.++
+                                  @ GHC.Types.Char
+                                  Rankit.$fShowPlayer6
+                                  (GHC.Base.++
+                                     @ GHC.Types.Char
+                                     Rankit.$fShowPlayer5
+                                     (GHC.Types.:
+                                        @ GHC.Types.Char
+                                        GHC.Show.shows6
+                                        (GHC.Show.showLitString
+                                           ww2
+                                           (GHC.Types.:
+                                              @ GHC.Types.Char
+                                              GHC.Show.shows6
+                                              (GHC.Base.++
+                                                 @ GHC.Types.Char
+                                                 Rankit.$fShowPlayer6
+                                                 (GHC.Base.++
+                                                    @ GHC.Types.Char
+                                                    Rankit.$fShowPlayer4
+                                                    (case ww3 of ww6 { GHC.Types.I# ww7 ->
+                                                     case GHC.Show.$wshowSignedInt
+                                                            0
+                                                            ww7
+                                                            (GHC.Base.++
+                                                               @ GHC.Types.Char
+                                                               Rankit.$fShowPlayer3
+                                                               x) of ww8 { (#,#) ww9 ww10 ->
+                                                     GHC.Types.:
+                                                       @ GHC.Types.Char
+                                                       ww9
+                                                       ww10 } })))))))) of ww6 { (#,#) ww7 ww8 ->
+                        GHC.Types.: @ GHC.Types.Char ww7 ww8 } })
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 11) of wild {
+                   GHC.Types.False
+                   -> GHC.Base.++ @ GHC.Types.Char Rankit.$fShowPlayer2 (g w)
+                   GHC.Types.True
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.shows9
+                        (GHC.Base.++
+                           @ GHC.Types.Char
+                           Rankit.$fShowPlayer2
+                           (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 w))) }) -}
+a71a06d3c734c1b6431ebfef543a4261
+  data Event = PlayerCreated Rankit.Player | MatchPlayed Rankit.Match
+eba48ed18ecfbce1b25f7a4280ea75d2
+  data EventData
+    = EventData {eventId :: GHC.Types.Int, body :: Rankit.Event}
+ca517412c6b7955349d61e2d2cbf3c0b
+  data Match
+    = Match {team1 :: [GHC.Types.Int],
+             score1 :: GHC.Types.Int,
+             team2 :: [GHC.Types.Int],
+             score2 :: GHC.Types.Int}
+4a540c1a01e742ae478a3174e1f69399
+  data Player
+    = Player {pid :: GHC.Types.Int,
+              playerName :: GHC.Base.String,
+              points :: GHC.Types.Int}
+41989433f4dec83fad7129e55f7da6e6
+  type UnrankedList = [(GHC.Types.Int, Rankit.Player)]
+a25727c251b01d14d4da6d59e518680a
+  body :: Rankit.EventData -> Rankit.Event
+  RecSel Rankit.EventData
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Rankit.EventData ->
+                 case ds of wild { Rankit.EventData ds1 ds2 -> ds2 }) -}
+b2fcd2aad42754826593f5cd7e47b89f
+  eventId :: Rankit.EventData -> GHC.Types.Int
+  RecSel Rankit.EventData
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U(U),A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Rankit.EventData ->
+                 case ds of wild { Rankit.EventData ds1 ds2 -> ds1 }) -}
+a8234a7888eee6fe787a63785d986169
+  pid :: Rankit.Player -> GHC.Types.Int
+  RecSel Rankit.Player
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U(U),A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Rankit.Player ->
+                 case ds of wild { Rankit.Player ds1 ds2 ds3 -> ds1 }) -}
+ccb6ffa35ff9a5a7b885e0f32b3fe7f2
+  playerName :: Rankit.Player -> GHC.Base.String
+  RecSel Rankit.Player
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Rankit.Player ->
+                 case ds of wild { Rankit.Player ds1 ds2 ds3 -> ds2 }) -}
+16697edf57f09eb5b4b7cc45438a5148
+  points :: Rankit.Player -> GHC.Types.Int
+  RecSel Rankit.Player
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,1*U(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Rankit.Player ->
+                 case ds of wild { Rankit.Player ds1 ds2 ds3 -> ds3 }) -}
+dcd386356124c868f51e08e4ec8e00b4
+  rankit :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Rankit.rankit1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+a1cf67805774956671d20b460442d359
+  rankit1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Rankit.rankit26
+                        GHC.Types.True
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Rankit.rankit25
+                        GHC.Types.True
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   Rankit.rankit2
+                   GHC.Types.True
+                   ipv2 } }) -}
+b0322ab4014a5d4221d6f9b0981c9c3f
+  rankit10 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 1) -}
+d1e5e20ffc1a78002e6ed69e0e868752
+  rankit11 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Rankit.rankit12
+                   (GHC.Types.[] @ GHC.Types.Int)) -}
+093c2adf80a79ae6b17a1e66903cc13c
+  rankit12 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 2) -}
+b78b62ba2d59ee37eeb005e537b046b3
+  rankit13 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Rankit.rankit10
+                   (GHC.Types.[] @ GHC.Types.Int)) -}
+e8dbba4975292aadaa1cbec7601a1f5c
+  rankit14 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 3) -}
+966c3e2b735e734ce8535903a1ec787e
+  rankit15 :: Rankit.EventData
+  {- Unfolding: (Rankit.EventData Rankit.rankit12 Rankit.rankit16) -}
+0581a6c7b332c417376368b09b9a8039
+  rankit16 :: Rankit.Event
+  {- Unfolding: (Rankit.PlayerCreated Rankit.rankit17) -}
+ad57be2b1eba0b019ffcb627fb9fbbb2
+  rankit17 :: Rankit.Player
+  {- Unfolding: (Rankit.Player
+                   Rankit.rankit12
+                   Rankit.rankit19
+                   Rankit.rankit18) -}
+bf993c72c7c4a3a89be33e9ecf2a0e06
+  rankit18 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 1000) -}
+b4624704d5c8b1fd45c598a1c65d98d7
+  rankit19 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Flemming"#) -}
+a6ac95c0d07e2ad7bdea835d9f96660f
+  rankit2 :: GHC.Base.String
+  {- Unfolding: (GHC.Show.showList__
+                   @ (GHC.Types.Int, Rankit.Player)
+                   Rankit.rankit24
+                   Rankit.rankit3
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+f27077538995f306d4d8ea90b71438db
+  rankit20 :: Rankit.EventData
+  {- Unfolding: (Rankit.EventData Rankit.rankit10 Rankit.rankit21) -}
+b7b886c008baa91454f4262b71fee41b
+  rankit21 :: Rankit.Event
+  {- Unfolding: (Rankit.PlayerCreated Rankit.rankit22) -}
+2d8c681ab4df3e22017c56ea5a14605e
+  rankit22 :: Rankit.Player
+  {- Unfolding: (Rankit.Player
+                   Rankit.rankit10
+                   Rankit.rankit23
+                   Rankit.rankit18) -}
+c140e1ba33b084f2816be2b65050f490
+  rankit23 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "TheHoff"#) -}
+31700741ca58623f08e3df47e2e23b2f
+  rankit24 ::
+    (GHC.Types.Int, Rankit.Player)
+    -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2,
+     Unfolding: (\ w3 :: (GHC.Types.Int, Rankit.Player)
+                   w4 :: GHC.Base.String[OneShot] ->
+                 case w3 of ww { (,) ww1 ww2 ->
+                 GHC.Types.:
+                   @ GHC.Types.Char
+                   GHC.Show.shows9
+                   (case ww1 of ww4 { GHC.Types.I# ww3 ->
+                    case GHC.Show.$wshowSignedInt
+                           0
+                           ww3
+                           (GHC.Types.:
+                              @ GHC.Types.Char
+                              GHC.Show.showList__1
+                              (GHC.List.foldr1_$sfoldr1
+                                 @ (GHC.Base.String -> GHC.Base.String)
+                                 GHC.Show.$fShow(,)1
+                                 (\ w :: GHC.Base.String ->
+                                  case ww2 of ww5 { Rankit.Player ww6 ww7 ww8 ->
+                                  Rankit.$w$cshowsPrec2 0 ww6 ww7 ww8 w })
+                                 (GHC.Types.[] @ GHC.Show.ShowS)
+                                 (GHC.Types.:
+                                    @ GHC.Types.Char
+                                    GHC.Show.shows8
+                                    w4))) of ww5 { (#,#) ww6 ww7 ->
+                    GHC.Types.: @ GHC.Types.Char ww6 ww7 } }) }) -}
+4ae323cc1d5b3b4b86d78cd48ccaedca
+  rankit25 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Ranked list"#) -}
+8432e5516c803bbb64a4764e247b69be
+  rankit26 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Ranky - Scoring the elite"#) -}
+74ab58877c29fc82143be5eae40fe2a9
+  rankit3 :: Rankit.UnrankedList
+  {- Unfolding: (Rankit.rankit_go
+                   Rankit.rankit4
+                   (GHC.Types.[] @ (GHC.Types.Int, Rankit.Player))) -}
+4dd11d10a495ea0497a14c72424ad132
+  rankit4 :: [Rankit.EventData]
+  {- Unfolding: (GHC.Types.:
+                   @ Rankit.EventData
+                   Rankit.rankit20
+                   Rankit.rankit5) -}
+82bba5a29ea0300a0a3e50b50dcb1fc6
+  rankit5 :: [Rankit.EventData]
+  {- Unfolding: (GHC.Types.:
+                   @ Rankit.EventData
+                   Rankit.rankit15
+                   Rankit.rankit6) -}
+101273a3be54a740557c345108d04399
+  rankit6 :: [Rankit.EventData]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ Rankit.EventData
+                   Rankit.rankit7
+                   (GHC.Types.[] @ Rankit.EventData)) -}
+fb64d37ecf78fccece59a0931cbeb208
+  rankit7 :: Rankit.EventData
+  {- HasNoCafRefs,
+     Unfolding: (Rankit.EventData Rankit.rankit14 Rankit.rankit8) -}
+a882cbd861d66c77c0fe9af7d73519a3
+  rankit8 :: Rankit.Event
+  {- HasNoCafRefs, Unfolding: (Rankit.MatchPlayed Rankit.rankit9) -}
+40ac3077e38d62af92aba1c89ee77001
+  rankit9 :: Rankit.Match
+  {- HasNoCafRefs,
+     Unfolding: (Rankit.Match
+                   Rankit.rankit13
+                   Rankit.rankit12
+                   Rankit.rankit11
+                   Rankit.rankit10) -}
+32096d95ed48fde5041780bcaced640e
+  rankit_go ::
+    [Rankit.EventData] -> Rankit.UnrankedList -> Rankit.UnrankedList
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U> -}
+525cf544082ddc7573af92460378ca4a
+  score1 :: Rankit.Match -> GHC.Types.Int
+  RecSel Rankit.Match
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSLL),1*U(A,1*U(U),A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Rankit.Match ->
+                 case ds of wild { Rankit.Match ds1 ds2 ds3 ds4 -> ds2 }) -}
+0eff3d13b78615038e5a0b266e216ae3
+  score2 :: Rankit.Match -> GHC.Types.Int
+  RecSel Rankit.Match
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLLS),1*U(A,A,A,1*U(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Rankit.Match ->
+                 case ds of wild { Rankit.Match ds1 ds2 ds3 ds4 -> ds4 }) -}
+8ca02692e4d9d1ae3b4824ce5a4477e3
+  team1 :: Rankit.Match -> [GHC.Types.Int]
+  RecSel Rankit.Match
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLLL),1*U(1*U,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Rankit.Match ->
+                 case ds of wild { Rankit.Match ds1 ds2 ds3 ds4 -> ds1 }) -}
+e0953d1ed8150fcd5187fc92ee95776b
+  team2 :: Rankit.Match -> [GHC.Types.Int]
+  RecSel Rankit.Match
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLSL),1*U(A,A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Rankit.Match ->
+                 case ds of wild { Rankit.Match ds1 ds2 ds3 ds4 -> ds3 }) -}
+instance GHC.Classes.Eq [Rankit.EventData] = Rankit.$fEqEventData
+instance GHC.Classes.Eq [Rankit.Player] = Rankit.$fEqPlayer
+instance GHC.Classes.Ord [Rankit.Player] = Rankit.$fOrdPlayer
+instance GHC.Show.Show [Rankit.EventData] = Rankit.$fShowEventData
+instance GHC.Show.Show [Rankit.Match] = Rankit.$fShowMatch
+instance GHC.Show.Show [Rankit.Player] = Rankit.$fShowPlayer
+"SPEC/Rankit $dm/= @ EventData" [ALWAYS] forall $dEq :: GHC.Classes.Eq
+                                                          Rankit.EventData
+  GHC.Classes.$dm/= @ Rankit.EventData $dEq
+  = \ x :: Rankit.EventData y :: Rankit.EventData ->
+    GHC.Classes.not (Rankit.$c== x y)
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

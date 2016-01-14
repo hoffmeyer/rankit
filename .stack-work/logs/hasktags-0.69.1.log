@@ -1,0 +1,40 @@
+Configuring hasktags-0.69.1...
+Building hasktags-0.69.1...
+Preprocessing library hasktags-0.69.1...
+[1 of 3] Compiling DebugShow        ( src/DebugShow.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.4.0/build/DebugShow.o )
+[2 of 3] Compiling Tags             ( src/Tags.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.4.0/build/Tags.o )
+
+src/Tags.hs:19:1: Warning: Tab character
+
+src/Tags.hs:29:1: Warning: Tab character
+
+src/Tags.hs:30:1: Warning: Tab character
+
+src/Tags.hs:31:1: Warning: Tab character
+
+src/Tags.hs:32:1: Warning: Tab character
+
+src/Tags.hs:33:1: Warning: Tab character
+
+src/Tags.hs:35:1: Warning: Tab character
+
+src/Tags.hs:36:1: Warning: Tab character
+
+src/Tags.hs:37:1: Warning: Tab character
+
+src/Tags.hs:44:1: Warning: Tab character
+[3 of 3] Compiling Hasktags         ( src/Hasktags.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.4.0/build/Hasktags.o )
+In-place registering hasktags-0.69.1...
+Preprocessing executable 'hasktags' for hasktags-0.69.1...
+[1 of 1] Compiling Main             ( src/Main.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.4.0/build/hasktags/hasktags-tmp/Main.o )
+
+src/Main.hs:10:1: Warning:
+    The import of ‘System.IO’ is redundant
+      except perhaps to import instances from ‘System.IO’
+    To import instances alone, use: import System.IO()
+Linking .stack-work/dist/x86_64-osx/Cabal-1.22.4.0/build/hasktags/hasktags ...
+Installing library in
+/Users/hoffmeyer/Development/rankit/.stack-work/install/x86_64-osx/lts-3.3/7.10.2/lib/x86_64-osx-ghc-7.10.2/hasktags-0.69.1-GQyqsqUteolHmUw9KCtc8M
+Installing executable(s) in
+/Users/hoffmeyer/Development/rankit/.stack-work/install/x86_64-osx/lts-3.3/7.10.2/bin
+Registering hasktags-0.69.1...

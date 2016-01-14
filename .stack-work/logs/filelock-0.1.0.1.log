@@ -1,0 +1,25 @@
+Configuring filelock-0.1.0.1...
+Building filelock-0.1.0.1...
+Preprocessing library filelock-0.1.0.1...
+[1 of 3] Compiling System.FileLock.Internal.LockFileEx ( .stack-work/dist/x86_64-osx/Cabal-1.22.4.0/build/System/FileLock/Internal/LockFileEx.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.4.0/build/System/FileLock/Internal/LockFileEx.o )
+[2 of 3] Compiling System.FileLock.Internal.Flock ( .stack-work/dist/x86_64-osx/Cabal-1.22.4.0/build/System/FileLock/Internal/Flock.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.4.0/build/System/FileLock/Internal/Flock.o )
+
+System/FileLock/Internal/Flock.hsc:9:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[3 of 3] Compiling System.FileLock  ( System/FileLock.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.4.0/build/System/FileLock.o )
+
+System/FileLock.hs:32:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+System/FileLock.hs:36:1: Warning:
+    The import of ‘Data.Traversable’ is redundant
+      except perhaps to import instances from ‘Data.Traversable’
+    To import instances alone, use: import Data.Traversable()
+In-place registering filelock-0.1.0.1...
+Installing library in
+/Users/hoffmeyer/.stack/snapshots/x86_64-osx/lts-4.1/7.10.2/lib/x86_64-osx-ghc-7.10.2/filelock-0.1.0.1-I1Q1Sh906rHHwvf8N0Gf05
+Registering filelock-0.1.0.1...

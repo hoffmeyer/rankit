@@ -1,0 +1,32 @@
+Configuring monad-logger-0.3.16...
+Building monad-logger-0.3.16...
+Preprocessing library monad-logger-0.3.16...
+[1 of 1] Compiling Control.Monad.Logger ( Control/Monad/Logger.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.4.0/build/Control/Monad/Logger.o )
+
+Control/Monad/Logger.hs:106:1: Warning:
+    Module ‘Control.Monad.Trans.Error’ is deprecated:
+      Use Control.Monad.Trans.Except instead
+
+Control/Monad/Logger.hs:211:26: Warning:
+    In the use of type constructor or class ‘Error’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+Control/Monad/Logger.hs:211:51: Warning:
+    In the use of type constructor or class ‘ErrorT’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+Control/Monad/Logger.hs:229:28: Warning:
+    In the use of type constructor or class ‘Error’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+Control/Monad/Logger.hs:229:55: Warning:
+    In the use of type constructor or class ‘ErrorT’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+In-place registering monad-logger-0.3.16...
+Installing library in
+/Users/hoffmeyer/.stack/snapshots/x86_64-osx/lts-4.1/7.10.2/lib/x86_64-osx-ghc-7.10.2/monad-logger-0.3.16-21VajC1nEPc9Okh9TSACTx
+Registering monad-logger-0.3.16...
